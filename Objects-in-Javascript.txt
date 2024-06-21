@@ -1,0 +1,37 @@
+1.Write a blog about objects and its internal representation in Javascript
+JavaScript, as a versatile and widely-used programming language, relies heavily on objects to structure data and functionality. 
+Objects in JavaScript are key to its flexibility and power, allowing developers to create complex data structures and organize code efficiently. 
+JavaScript objects serve as fundamental building blocks for modern JavaScript. Unlike primitive data types (such as numbers, strings, booleans, null, undefined, and symbols), objects are more complex and can contain a combination of primitive and reference data types
+In JavaScript, objects are essentially collections of key-value pairs where the keys are strings (or Symbols) and the values can be of any data type, including other objects or functions. Objects are instances of the Object type
+Example for Object :
+Var person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 30,
+    greet: function() {
+        console.log('Hello, ' + this.firstName + ' ' + this.lastName);
+    }
+};
+In this example, person is an object with properties (firstName, lastName, age) and a method (greet). Each property and method is stored as a key-value pair within the object.
+
+1.Properties and Key-Value Pairs:
+    An object is an unordered collection of related data represented as “key: value” pairs.
+    These keys (also known as properties) can be variables or functions associated with the object.
+    For example, if you have an object representing a student, it might have properties like name, age, address, and methods like updateAddress and updateName.
+2.Reference Data Type:
+    Objects are reference data types. When you assign an object to a variable, that variable holds a reference or pointer to the object’s memory location.
+    The actual value is stored in memory, and the variable points to it.
+3.Accessing Properties:
+    You can access an object’s properties using dot notation (e.g., objectName.propertyName) or bracket notation (e.g., objectName['propertyName']).
+    Unassigned properties are undefined.
+    Property names can be any valid JavaScript string, including those that are not valid identifiers (e.g., containing spaces or hyphens).
+4.Prototype Chain:
+    Objects have an internal property called [[Prototype]] (also known as __proto__ in some contexts).
+    This creates a chain of prototypes, allowing objects to inherit properties and methods from their prototypes.
+    This prototype is another object that the current object inherits some properties and methods from. This mechanism is central to JavaScript's prototypal inheritance model.
+5.Memory Representation:
+    Most objects store their properties in a single block of memory.
+    Each block of memory has a pointer to a map that describes the object’s structure
+    Objects in JavaScript are typically allocated memory dynamically, and the engine manages memory allocation and deallocation automatically through garbage collection.
+
+In summary, JavaScript objects are powerful constructs that allow you to organize and manipulate data efficiently.

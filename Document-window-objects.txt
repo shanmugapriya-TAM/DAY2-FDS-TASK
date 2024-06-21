@@ -1,0 +1,44 @@
+1.Write the blog on the difference between Document and window objects
+Document Objects:
+The document object represents the web page.If you want to access any element in an HTML page, you always start with accessing the document object.
+When an HTML document is loaded into a web browser, it becomes a document object. 
+This object serves as the root node of the HTML document.
+What is the DOM?
+The Document Object Model (DOM) is a crucial concept in web development. 
+It connects web pages to scripts or programming languages by representing the structure of an HTML document (such as the HTML representing a web page) in memory. Essentially, the DOM allows you to interact with and manipulate the content of a web page dynamically. 
+Common Methods and Properties of the Document Objects:
+1.Finding HTML Elements
+2.Changing HTML Elements
+3.Adding and Deleting Elements
+4.Event Handling
+
+Window objects:
+The window object represents an open window in a browser.When you run JavaScript within a browser, this object provides a top-level context for executing your code.
+If a document contain frames (<iframe> tags), the browser creates one window object for the HTML document, and one additional window object for each frame.
+window object is available globally, so you can directly use its properties and methods without explicitly referencing it.
+By leveraging its properties and methods, developers can create dynamic and interactive web applications that respond to user actions, manipulate content, manage browser history, and much more.
+
+Comparision between document and window objects
+Document Objects:
+    Represents a web page loaded in the browser.
+    Accessed using window.document or simply document.
+    Allows access to elements within the HTML page.
+    Used for adding dynamic content to the web page.
+    Common properties include:
+        activeElement: Returns the currently active element.
+        body: Returns the contents of the <body> element.
+        title: Returns the title of the document.
+    Common methods include:
+        addEventListener(): Attaches an event handler.
+        adoptNode(): Adopts a node from another document.
+
+Window Objects:
+    Represents the browser window or frame.
+    Contains properties, methods, and functionalities related to the entire window.
+    Global object accessible as window.
+    The document object is a property of the window.
+    Provides broader scope beyond the specific web page.
+    Example properties:
+        screen: Information about physical screen dimensions.
+        location: URL of the current page.
+In summary, while the document object focuses on representing and manipulating content within an HTML document, the window object encompasses the entire browser window and its properties.
